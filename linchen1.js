@@ -11,3 +11,4 @@ function show1(array2)
     });
 }
 });
+//hah 
