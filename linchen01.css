@@ -1,0 +1,323 @@
+﻿.view-login .content-wrapper, .view-passwordreset .content-wrapper, .view-register 
+
+.content-wrapper, body .content-wrapper {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 0 30px;
+    background: 0 0;
+}
+
+@media (min-width: 767px){
+.view-login .content-wrapper, .view-passwordreset .content-wrapper, .view-register 
+
+.content-wrapper, body .content-wrapper {
+    min-height: 100vh;
+    margin-top: -142px;
+    padding-top: 142px;
+}
+}
+/**/
+
+
+.content-wrapper .wrapper-course-material {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/**/
+.content-wrapper .course-material {
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    min-width: 0;
+    max-width: none;
+    background: 0 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px){
+.content-wrapper .course-material {
+    width: 750px;
+}
+}
+
+@media (min-width: 992px){
+.content-wrapper .course-material {
+    width: 970px;
+}
+}
+
+
+@media (min-width: 1200px){
+.content-wrapper .course-material {
+    width: 1170px;
+}
+}
+
+/**/
+
+
+.content-wrapper .course-material .course-tabs {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/**/
+
+
+.wrapper-course-material ol.course-tabs li {
+    float: left;
+    list-style: none;
+    /*margin-right: 6px;*/
+}
+
+.content-wrapper .course-material .course-tabs li:last-child {
+    margin: 0;
+}
+
+@media (max-width: 767px){
+.content-wrapper .course-material .course-tabs li:last-child.right {
+    width: auto;
+    height: auto;
+    float: none;
+}
+}
+
+/**/
+.content-wrapper .container {
+    margin: 15px auto 0;
+    padding: 0 15px;
+    width: auto;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+}
+
+@media (min-width: 768px)
+.content-wrapper .container {
+    width: 750px;
+}
+
+@media (min-width: 992px){
+.content-wrapper .container {
+    width: 970px;
+}
+}
+
+@media (min-width: 1200px){
+.content-wrapper .container {
+    width: 1170px;
+}
+}
+
+
+/**/
+
+
+.content-wrapper .container>div {
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 30px;
+    box-shadow: none;
+    background: #fff;
+    border: 1px solid #85b000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.content-wrapper .container>.discussion-body {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #fff;
+    padding: 0;
+}
+
+/**/
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    border: 0;
+    border-radius: 0;
+    border-right: 1px solid #85b000;
+    padding: 0;
+    background: 0 0;
+    box-shadow: none;
+}
+
+
+@media (min-width: 768px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 100%;
+}
+}
+
+@media (max-width: 991px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    border-right: 0 none;
+    height: auto!important;
+}
+}
+
+
+@media (min-width: 992px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 33.33333333%;
+}
+}
+
+@media (min-width: 1200px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 33.33333333%;
+}
+}
+
+/*左边框子样式*/
+@media (max-width: 991px){
+.content-wrapper .container>.discussion-body>.forum-nav .forum-nav-thread-list {
+    height: auto!important;
+}
+}
+
+/**/
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: 0 0;
+    box-shadow: none;
+}
+
+@media (min-width: 768px){
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 100%;
+}
+}
+
+@media (min-width: 992px){
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 66.66666667%;
+}
+}
+
+@media (min-width: 1200px){
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 66.66666667%;
+}
+}
+
+/*是讨论帖布局*/
+
+.content-wrapper .course-material .course-tabs li a.new-post-btn {
+    width: auto;
+    height: auto;
+    font: inherit;
+    background: #1e9ed7;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    text-shadow: none;
+    text-overflow: ellipsis;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    box-shadow: none;
+    margin: 0;
+    padding: .5em 1.2em;
+    outline: 0;
+    overflow: hidden;
+    border-color: #1e9ed7;
+    font-size: .9em;
+}
+
+@media (max-width: 767px){
+.content-wrapper .course-material .course-tabs li a.new-post-btn {
+    white-space: normal;
+}
+}
+
+@media (max-width: 767px){
+.content-wrapper .course-material .course-tabs li:last-child.right a {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+}
+
+
+/*就是右边的最后一个布局*/
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article {
+    background: 0 0;
+}
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home {
+    padding: 15px;
+}
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home .home-header {
+    border: 0;
+}
+
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home .label {
+    font: inherit;
+    color: inherit;
+    display: inline;
+    padding: 0;
+}
+
+header.global.slim h2 {
+    width: 35%;
+}
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home h1 {
+    font: inherit;
+    font-weight: 600;
+    color: inherit;
+    margin: 1em 0 0;
+}
+
+
+.label {
+    border-radius: .25em;
+}
