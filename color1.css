@@ -1,0 +1,165 @@
+body header.global.slim {
+    background-color: #85b000;
+}
+
+header.global.slim h2 span{
+    color: #fff;
+}
+
+header.global.slim h2 {
+    width: 35%;
+}
+
+header.global .user a.user-link {
+    color: black;/*staff字体为蓝色或者黑色*/
+    font-weight: normal;
+    box-shadow: 0 0px 0 0;
+}
+
+header.global .user .dropdown{
+    color: #fff;
+	background: #85b000;
+}
+
+.wrapper-preview-menu {
+    background-color: #080808;
+    padding: 15px 0;
+}
+
+.wrapper-preview-menu label{
+    color:#fff;
+}
+
+.wrapper-preview-menu .preview-menu {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: .9em;
+    color: #fff;
+}
+
+/*课程信息*/
+.content-wrapper .course-material .course-tabs li a.active {
+    box-shadow: none;
+    text-shadow: none;
+    background: #85b000;
+    color: #fff;
+}
+
+.content-wrapper .container .info-wrapper .updates h1 {
+    font: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: #85b000;
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.5em;
+}
+
+
+.content-wrapper .container .info-wrapper .updates>section>article {
+    margin: 0 0 1em;
+    padding: 10px;
+    border: 1px solid #85b000;
+    border-radius: 4px;
+}
+
+.content-wrapper .container .info-wrapper .updates>section>article:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.content-wrapper .container .info-wrapper .updates>section>article>h2 {
+    font: inherit;
+    font-weight: 600;
+    color: inherit;
+    background: 0 0;
+    margin: 0 0 1em;
+    padding: 0;
+    border-bottom: 1px solid #85b000;/*中间一个横线*/
+}
+
+body.view-in-course .wrapper-footer {
+    background-color: #85b000;
+}
+
+.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a{
+    color:#fff;
+}
+
+.wrapper-footer footer#footer-openedx .copyright
+{
+   color:#fff;
+}
+
+.wrapper-footer footer#footer-openedx nav.nav-legal a{
+   color:#fff;
+} 
+
+body.view-in-course .wrapper-footer {
+    margin-top: 150px;
+}
+
+
+
+body.view-in-course .wrapper-footer {
+    margin-top: 150px;
+}
+
+.content-wrapper .container .course-wrapper .course-index #accordion .chapter h3 a {
+    color: #080808;
+}
+
+
+.course-index .accordion .course-navigation .button-chapter .group-heading{
+    color: #080808;
+}
+
+.course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item a{
+    color: #85b000;
+}
+
+.course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item a p.subtitle {
+    color: #080808;
+}
+
+.course-content h2{
+    color: #85b000;
+}
+
+.a, a, a:link, a:visited, p a, p a:link, p a:visited{
+    color: #85b000;
+}
+
+/*对ul和li进行设置样式*/
+header.global .user .dropdown-menu.expanded {
+    width: auto;
+    height: auto;
+    padding: 0;
+    z-index: 10;
+    top: 28px;
+    left: initial;
+    right: 0;
+    box-shadow: none;
+    border: 1px solid #85b000;
+    border-top: 0 none;
+    border-top-right-radius: 0;
+    background-color: #fff;
+}
+
+
+header.global .user .dropdown-menu li {
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    border: 0;
+    padding: 2px 8px;
+    color: #85b000;
+}
+
+header.global .user .dropdown-menu li a {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    letter-spacing: normal;
+    color: inherit;
+}
