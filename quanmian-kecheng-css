@@ -1,0 +1,689 @@
+body header.global.slim {
+    background-color: #85b000;
+}
+
+header.global.slim h2 span{
+    color: #fff;
+}
+
+header.global.slim h2 {
+    width: 35%;
+}
+
+header.global .user a.user-link {
+    color: black;/*staff字体为蓝色或者黑色*/
+    font-weight: normal;
+    box-shadow: 0 0px 0 0;
+}
+
+header.global .user .dropdown{
+    color: #fff;
+	background: #85b000;
+}
+
+.wrapper-preview-menu {
+    background-color: #080808;
+    padding: 15px 0;
+}
+
+.wrapper-preview-menu label{
+    color:#fff;
+}
+
+.wrapper-preview-menu .preview-menu {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: .9em;
+    color: #fff;
+}
+
+/*课程信息*/
+.content-wrapper .course-material .course-tabs li a.active {
+    box-shadow: none;
+    text-shadow: none;
+    background: #85b000;
+    color: #fff;
+}
+
+.content-wrapper .container .info-wrapper .updates h1 {
+    font: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: #85b000;
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.5em;
+}
+
+
+.content-wrapper .container .info-wrapper .updates>section>article {
+    margin: 0 0 1em;
+    padding: 10px;
+    border: 1px solid #85b000;
+    border-radius: 4px;
+}
+
+.content-wrapper .container .info-wrapper .updates>section>article:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.content-wrapper .container .info-wrapper .updates>section>article>h2 {
+    font: inherit;
+    font-weight: 600;
+    color: inherit;
+    background: 0 0;
+    margin: 0 0 1em;
+    padding: 0;
+    border-bottom: 1px solid #85b000;/*中间一个横线*/
+}
+
+body.view-in-course .wrapper-footer {
+    background-color: #85b000;
+}
+
+.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a{
+    color:#fff;
+}
+
+.wrapper-footer footer#footer-openedx .copyright
+{
+   color:#fff;
+}
+
+.wrapper-footer footer#footer-openedx nav.nav-legal a{
+   color:#fff;
+} 
+
+body.view-in-course .wrapper-footer {
+    margin-top: 150px;
+}
+
+
+
+body.view-in-course .wrapper-footer {
+    margin-top: 150px;
+}
+
+.content-wrapper .container .course-wrapper .course-index #accordion .chapter h3 a {
+    color: #080808;
+}
+
+
+.course-index .accordion .course-navigation .button-chapter .group-heading{
+    color: #080808;
+}
+
+.course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item a{
+    color: #85b000;
+}
+
+.course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item a 
+
+p.subtitle {
+    color: #080808;
+}
+
+.course-content h2{
+    color: #85b000;
+}
+
+.a, a, a:link, a:visited, p a, p a:link, p a:visited{
+    color: #85b000;
+}
+
+/*对ul和li进行设置样式*/
+header.global .user .dropdown-menu.expanded {
+    width: auto;
+    height: auto;
+    padding: 0;
+    z-index: 10;
+    top: 28px;
+    left: initial;
+    right: 0;
+    box-shadow: none;
+    border: 1px solid #85b000;
+    border-top: 0 none;
+    border-top-right-radius: 0;
+    background-color: #fff;
+}
+
+
+header.global .user .dropdown-menu li {
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    border: 0;
+    padding: 2px 8px;
+    color: #85b000;
+}
+
+header.global .user .dropdown-menu li a {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    letter-spacing: normal;
+    color: inherit;
+}
+
+
+/********/
+
+.view-login .content-wrapper, .view-passwordreset .content-wrapper, .view-register 
+
+.content-wrapper, body .content-wrapper {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 0 30px;
+    background: 0 0;
+}
+
+@media (min-width: 767px){
+.view-login .content-wrapper, .view-passwordreset .content-wrapper, .view-register 
+
+.content-wrapper, body .content-wrapper {
+    min-height: 100vh;
+    margin-top: -142px;
+    padding-top: 142px;
+}
+}
+/**/
+
+
+.content-wrapper .wrapper-course-material {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: 0 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/**/
+.content-wrapper .course-material {
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    min-width: 0;
+    max-width: none;
+    background: 0 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px){
+.content-wrapper .course-material {
+    width: 750px;
+}
+}
+
+@media (min-width: 992px){
+.content-wrapper .course-material {
+    width: 970px;
+}
+}
+
+
+@media (min-width: 1200px){
+.content-wrapper .course-material {
+    width: 1170px;
+}
+}
+
+/**/
+
+
+.content-wrapper .course-material .course-tabs {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/**/
+
+
+.wrapper-course-material ol.course-tabs li {
+    float: left;
+    list-style: none;
+    /*margin-right: 6px;*/
+}
+
+.content-wrapper .course-material .course-tabs li:last-child {
+    margin: 0;
+}
+
+@media (max-width: 767px){
+.content-wrapper .course-material .course-tabs li:last-child.right {
+    width: auto;
+    height: auto;
+    float: none;
+}
+}
+
+/**/
+.content-wrapper .container {
+    margin: 15px auto 0;
+    padding: 0 15px;
+    width: auto;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+}
+
+@media (min-width: 768px)
+.content-wrapper .container {
+    width: 750px;
+}
+
+@media (min-width: 992px){
+.content-wrapper .container {
+    width: 970px;
+}
+}
+
+@media (min-width: 1200px){
+.content-wrapper .container {
+    width: 1170px;
+}
+}
+
+
+/**/
+
+
+.content-wrapper .container>div {
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 30px;
+    box-shadow: none;
+    background: #fff;
+    border: 1px solid #85b000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.content-wrapper .container>.discussion-body {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #fff;
+    padding: 0;
+}
+
+/**/
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    border: 0;
+    border-radius: 0;
+    border-right: 1px solid #85b000;
+    padding: 0;
+    background: 0 0;
+    box-shadow: none;
+}
+
+
+@media (min-width: 768px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 100%;
+}
+}
+
+@media (max-width: 991px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    border-right: 0 none;
+    height: auto!important;
+}
+}
+
+
+@media (min-width: 992px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 33.33333333%;
+}
+}
+
+@media (min-width: 1200px){
+.content-wrapper .container>.discussion-body>.forum-nav {
+    float: left;
+    width: 33.33333333%;
+}
+}
+
+/*左边框子样式*/
+@media (max-width: 991px){
+.content-wrapper .container>.discussion-body>.forum-nav .forum-nav-thread-list {
+    height: auto!important;
+}
+}
+
+/**/
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: 0 0;
+    box-shadow: none;
+}
+
+@media (min-width: 768px){
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 100%;
+}
+}
+
+@media (min-width: 992px){
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 66.66666667%;
+}
+}
+
+@media (min-width: 1200px){
+.content-wrapper .container>.discussion-body>.discussion-column {
+    float: left;
+    width: 66.66666667%;
+}
+}
+
+/*是讨论帖布局*/
+
+.content-wrapper .course-material .course-tabs li a.new-post-btn {
+    width: auto;
+    height: auto;
+    font: inherit;
+    background: #1e9ed7;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    text-shadow: none;
+    text-overflow: ellipsis;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    box-shadow: none;
+    margin: 0;
+    padding: .5em 1.2em;
+    outline: 0;
+    overflow: hidden;
+    border-color: #1e9ed7;
+    font-size: .9em;
+}
+
+@media (max-width: 767px){
+.content-wrapper .course-material .course-tabs li a.new-post-btn {
+    white-space: normal;
+}
+}
+
+@media (max-width: 767px){
+.content-wrapper .course-material .course-tabs li:last-child.right a {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+}
+
+
+/*就是右边的最后一个布局*/
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article {
+    background: 0 0;
+}
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home 
+
+{
+    padding: 15px;
+}
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home 
+
+.home-header {
+    border: 0;
+}
+
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home 
+
+.label {
+    font: inherit;
+    color: inherit;
+    display: inline;
+    padding: 0;
+}
+
+header.global.slim h2 {
+    width: 35%;
+}
+
+.content-wrapper .container>.discussion-body>.discussion-column .discussion-article.view-discussion-home 
+
+h1 {
+    font: inherit;
+    font-weight: 600;
+    color: inherit;
+    margin: 1em 0 0;
+}
+
+
+.label {
+    border-radius: .25em;
+}
+
+
+/**********************/
+
+
+body.view-in-course .window-wrap {
+    min-width: 60px;
+}
+
+@media (min-width: 768px){
+body.view-in-course .container {
+    /* width: 750px; */
+}
+}
+
+@media (min-width: 992px){
+body.view-in-course .content-wrapper .container {
+    /* width: 1270px; */
+}
+}
+
+body.view-in-course .container {
+    margin: 15px auto 0;
+    padding: 0 15px;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+}
+
+
+body.view-in-course .content-wrapper .container .course-wrapper .course-index {
+    /* width: 100%; */
+    height: 100%;
+    position: relative;
+    min-height: 1px;
+    padding: 0;
+    /* display: block; */
+    font: inherit;
+    background: 0 0;
+    border-radius: 0;
+    border: 0;
+    -webkit-transition: none;
+    transition: none;
+    box-sizing: border-box;
+    border-right: 1px solid #85b000;
+}
+
+@media (max-width: 991px){
+body.view-in-course .content-wrapper .container .course-wrapper .course-index {
+    border-right: none;
+    border-bottom: 2px solid #85b000;
+    display: block;
+}
+}
+
+@media (min-width: 992px){
+body.view-in-course .content-wrapper .container .course-wrapper .course-index {
+    /* float: left; */
+    /* width: 25%; */
+}
+}
+
+
+body.view-in-course .content-wrapper .container .course-wrapper .course-content 
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 1px;
+    font: inherit;
+    display: block;
+    margin: 0 0 0 -1px;
+    padding: 30px;
+    border-left: 1px solid #85b000;
+}
+
+@media (min-width: 992px){
+body.view-in-course .content-wrapper .container .course-wrapper .course-content {
+    /* float: left; */
+    /* width: 75%; */
+}
+}
+
+
+@media (max-width: 767px){
+.content-wrapper .container .course-wrapper .course-content {
+    padding: 10px;
+}
+}
+
+header.global.slim h2 {
+    display: block;
+    width: 30%;
+    float: left;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #646464 #3c3c3c;
+    letter-spacing: 0;
+    margin-top: 9px;
+    margin-bottom: 0;
+    text-transform: none;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.search-results .search-results-item .result-link {
+     right: 10px; 
+     position: absolute; 
+     top: 52px; 
+}
+
+
+/*上面是github*/
+
+
+.wrapper-course-material .course-material, .wrapper-preview-menu .preview-menu {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 100%;
+}
+
+body.view-in-course .wrapper-course-material .course-material {
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    min-width: 0;
+    max-width: none;
+    background: 0 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px){
+body.view-in-course .wrapper-course-material .course-material {
+    width: 750px;
+}
+}
+
+
+@media (min-width: 992px){
+body.view-in-course .wrapper-course-material .course-material {
+    width: 970px;
+}
+}
+
+.content-wrapper .container>div {
+    padding: 0;
+}
+
+@media (min-width: 768px){
+body.view-in-course .content-wrapper .container {
+    width: 750px;
+}
+}
+
+@media (min-width: 992px){
+body.view-in-course .content-wrapper .container {
+    width: 970px;
+}
+}
+
+@media (min-width:1200px){body.view-in-course .wrapper-course-material .course-material{width:1170px}}
+
+@media (min-width:1200px){body.view-in-course .content-wrapper .container{width:1170px}}
+
+@media (min-width:1200px){body.view-in-course .content-wrapper .container .course-wrapper .course-index{float:left;width:25%}}
+
+.content-wrapper .container>.profile-wrapper>.course-info {
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+
+/*
+在linchen.css中修改header.global.slim h2 为 width: 30%;
+把linchen.css中的下面样式去掉
+body.view-in-course .content-wrapper .container {
+    width: 1270px;
+}
+*/
