@@ -1,0 +1,40 @@
+body.view-in-course header.global, body.view-in-course header.global.slim {
+   background-color: #85b000;
+}
+
+header.global.slim h2 {
+    display: block;
+    width: 23%;
+    float: left;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #646464 #3c3c3c;
+    letter-spacing: 0;
+    margin-top: 9px;
+    margin-bottom: 0;
+    text-transform: none;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+header.global.slim h2.course-header span {
+   color:#fff;
+}
+
+
+header.global .user .dropdown {
+   color: #fff;
+   background: #85b000;
+}
+
+header.global .user a.user-link {
+    color: black;
+    font-weight: normal;
+    box-shadow: 0 0px 0 0;
+}
+
+body.view-in-course .window-wrap{
+    min-width: 60px;
+}
