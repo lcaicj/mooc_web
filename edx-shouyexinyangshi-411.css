@@ -1,0 +1,250 @@
+header.global{
+    background-color: #85b000;
+}
+
+header.global .nav-global li a{
+    color:#fff;
+
+}
+
+.dashboard .my-courses .course .details .course-info .info-date-block {
+    color: #767676;
+    display: inline-block;/*日期设置display*/
+}
+
+.dashboard .my-courses .course .details .course-actions .action {
+    margin-right: 0;
+}
+
+header.global .nav-global {
+    margin-top: 5px;
+}
+
+header.global .user a.user-link {
+    color: #85b200;
+}
+
+/*我的课程*/
+.dashboard .my-courses .wrapper-header-courses .header-courses {
+    padding-right: 10px;
+    color: #85b200;
+    margin-bottom: 20px;
+}
+
+
+.dashboard .profile-sidebar {
+    background: transparent;
+    float: right;
+    margin-left: 2.35765%;
+    width: 0;
+    /* margin-top: 40px; */
+    /* border-top: 3px solid #0078b0; */
+    /* padding: 20px 0; */
+}
+
+/*container的置顶*/
+.content-wrapper .container {
+  margin-top:38px;
+}
+
+.dashboard .my-courses .course .details .enter-course {
+    background-color: #126f9a;
+    color: #fff;
+}
+
+.dashboard .my-courses .course .details .enter-course:hover {
+    background-color: #fff;
+    color: #126f9a;
+}
+
+.dashboard .my-courses {
+   border:1px solid #85b200;
+   border-radius: 4px;
+}
+
+.dashboard .my-courses .wrapper-header-courses .header-courses {/*我的课程居中*/
+    text-align: center;
+}
+
+.dashboard .my-courses .wrapper-header-courses {/*我的课程向下来下*/
+    padding-top: 10px;
+}
+
+/*机器设置图标的位置*/
+.dashboard .my-courses .course .details .course-actions .wrapper-action-more {
+    left: -32px;/*relative是相对于原来的位置*/
+}
+
+header.global .user {
+    margin-right: 9%;/*登录按钮位置*/
+}
+
+/*查看按钮和日期的width设置*/
+.dashboard .my-courses .course .details .course-info {
+    width: 39%;
+}
+.dashboard .my-courses .course .details .wrapper-course-actions {
+    width: 58%;
+}
+
+
+.dashboard .my-courses .course .details .wrapper-course-details {
+   width: auto;
+}
+
+.dashboard .my-courses .course .details .wrapper-course-image {
+   width: auto;
+}
+
+.dashboard .my-courses .course .details .wrapper-course-image .cover{
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 767px){
+   .dashboard .my-courses {
+       width:100%;   
+       padding: 0 15px;
+   }
+   .content-wrapper .container>div {
+       margin-top:5%;  /*查找课程的长度，同时要去掉suoyoukecheng.css中的width:auto*/
+       width: 100%;
+   }
+   .dashboard .my-courses .course .details .wrapper-course-image .cover{
+   width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .dashboard .my-courses .course .details .wrapper-course-image{
+    width:100%;
+  }
+  .dashboard .my-courses .course .details .course-title a{/*edx字体*/
+   font-size:30px;
+  }
+  .dashboard .my-courses .course .details .course-info {/*开始日期的设置*/
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .dashboard .my-courses .course .details .enter-course {
+    float: none;/*查看课程去除浮动*/
+    width:80%;
+  }
+  .dashboard .my-courses .course .details .wrapper-course-actions {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  /*头部图片变化*/
+  header.global h1.logo a img{
+    width:100px;
+    height:36px;
+  }
+
+  header.global h1.logo {
+    float: left;
+    margin: -2px 20px 0 0;
+    position: relative;
+  }
+}
+
+@media (max-width: 500px){
+header.global h1.logo {
+    float: left;
+    margin: -2px 2px 0 0;
+    position: relative;
+  }
+header.global {
+  height:110px;
+}
+.dashboard .my-courses .course .details .course-actions .wrapper-action-more {
+    left: 0;
+}
+}
+
+/*linchen字体颜色*/
+header.global .user a.user-link div{
+   color:#fff;
+}
+
+
+
+/********/
+header.global .user a.user-link {
+    color: black;
+    font-weight: normal;
+    box-shadow: 0 0px 0 0;
+}
+
+header.global .user .dropdown {
+    color: #fff;
+    background: #85b000;
+}
+
+/*****新的****/
+.content-wrapper .container {
+    margin-top: 18px;
+}
+
+.dashboard {
+    padding: 20px 0 20px 0;
+}
+
+.dashboard .my-courses .wrapper-header-courses {
+    /* padding-top: 10px; */
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom:0px;
+}
+
+header.global .user {
+    margin-right: 6%;
+}
+
+.dashboard .my-courses .listing-courses .course-item {
+    border: 1px solid #85b000;
+}
+
+
+.dashboard .my-courses .course .details .wrapper-course-details {
+    width: 60%;
+}
+
+.content-wrapper .container {
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    min-width: 0;
+    max-width: none;
+    margin-top: 30px;
+}
+
+.dashboard .my-courses {
+    border: none;
+}
+
+@media(max-width:500px){
+   .dashboard .my-courses .wrapper-header-courses .header-courses {
+      text-align: left; 
+   }
+   .dashboard .my-courses {
+      padding: 0; 
+   }
+   .dashboard .my-courses .wrapper-header-courses .header-courses {
+      margin-bottom: 0;
+   }
+   .dashboard .my-courses .course .details .wrapper-course-details {
+      width: 100%;
+   }
+   .dashboard .my-courses .course .details .enter-course {
+      width: 82%;
+   }
+}
