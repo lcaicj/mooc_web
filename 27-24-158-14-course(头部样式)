@@ -1,0 +1,40 @@
+@media (max-width: 500px){
+header.global {
+    height: 110px;
+}
+}
+
+header.global {
+    background-color: #85b000;
+}
+
+@media (max-width: 767px){
+header.global h1.logo {
+    float: left;
+    margin: -2px 2px 0 0;
+    position: relative;
+}
+}
+
+header.global .nav-global {
+    margin-top: 5px;
+}
+
+header.global .user {
+    margin-right: 6%;
+}
+
+header.global .user a.user-link div {
+    color: #fff;
+}
+
+header.global .nav-global li a {
+    color: #fff;
+}
+
+@media (max-width: 767px){
+header.global h1.logo a img {
+    width: 100px;
+    height: 36px;
+}
+}
