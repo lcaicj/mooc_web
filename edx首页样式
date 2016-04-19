@@ -276,3 +276,11 @@ body {
     margin-bottom: 30px;
     background: #fff;
 }
+
+.dashboard .my-courses .course .details .enter-course:hover {
+    border:1px solid #126f9a;
+}
+
+header.global .user a.user-link div:hover{
+   color:#85b200;
+}
