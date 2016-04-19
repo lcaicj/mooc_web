@@ -68,3 +68,7 @@ body.view-in-course header.global .nav-wrapper, body.view-in-course header.globa
 header.global.slim nav {
     padding-top: 12px;
 }
+
+header.global .user a.user-link div:hover {
+    color: #85b200;
+}
