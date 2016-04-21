@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+</style>
+  <meta charset="utf-8"/>
+  <script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <!--<script type="text/javascript" src="http://7xr22g.com1.z0.glb.clouddn.com/plupload.full.min.js"></script>-->
+  <script type="text/javascript" src="http://cdn.bootcss.com/plupload/2.1.1/plupload.full.min.js"></script>     
+  <script type="text/javascript" src="http://7xr22g.com1.z0.glb.clouddn.com/ui.js"></script>
+  <script type="text/javascript" src="http://7xr22g.com1.z0.glb.clouddn.com/qiniu.js"></script>
+  <script type="text/javascript" src="http://7xr22g.com1.z0.glb.clouddn.com/sc_main.js"></script>
+  <!--<link rel="stylesheet" href="http://7xr22g.com1.z0.glb.clouddn.com/sc__main.css">-->
+  <script src="http://7xr22g.com1.z0.glb.clouddn.com/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="http://7xr22g.com1.z0.glb.clouddn.com/jquery.modal.css" type="text/css" media="screen" />
+  <script src="http://cdn.bootcss.com/clipboard.js/1.5.9/clipboard.min.js"></script>
+  <script type="text/javascript" src="http://cdn.bootcss.com/jquery-noty/2.3.8/packaged/jquery.noty.packaged.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://7xr22g.com1.z0.glb.clouddn.com/buttons.css">
+  <link rel="stylesheet" type="text/css" href="http://7xr22g.com1.z0.glb.clouddn.com/shang_chuan.css">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+  <div id="ex1" style="display:none;overflow: scroll;overflow-x: hidden;position:relative;">
+	<div class="container">
+    <div class="text-left col-md-12 wrapper">      
+        <input type="hidden" id="domain" value="http://media.pkmooc.com/">
+        <input type="hidden" id="uptoken_url" value="/uptoken">
+        <ul class="tip col-md-12 text-mute">
+    </div>
+    <div class="qiniu_body">
+        <div class="col-md-12">
+            <div id="container" style="position: relative;">
+                <div>
+                <a class="btn btn-default btn-lg " id="pickfiles" href="http://jssdk.demo.qiniu.io/#">              
+                    <span>选择文件</span>
+                </a></div>
+            <div id="html5_1af0gjnfa1jjuigo1de040v1ccq3_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 100px; height: 30px; overflow: hidden; z-index: 0;"><input id="html5_1af0gjnfa1jjuigo1de040v1ccq3" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept="">
+            </div>
+            </div>
+        </div>
+        <div class="jindu" style="margin-top: 10px;color:#0086B3;"></div>
+        <div class="col-md-12 ">
+            <table class="table table-striped table-hover text-left" style="margin-top: 20px;">
+                <tbody id="fsUploadProgress">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+	<div class="xsnr" style="margin-top: 10px;"></div>
+	<a id="guanbi" href="#" rel="modal:close" style="margin-top: 20px;"><button style="padding:3px 8px;background: #E10601;color:#FFF;border:1px solid #E10601;font-size: 16px;border-radius: 4px;" onmouseover="this.style.cssText='padding:3px 8px;color:#fff;background:#E10601;border:1px solid #E10601;font-size: 16px;border-radius: 4px;cursor:pointer;opacity:0.8;'" onmouseout="this.style.cssText='padding:3px 8px;background: #E10601;color:#FFF;border:1px solid #E10601;font-size: 16px;border-radius: 4px;'">关闭</button></a>
+  </div>
+  
+  <a href="#ex1" id="qnsc" rel="modal:open">七牛云上传</a>
+ 
+  <script>
+  
+       var json1 = {"qiniu":[{"hello":"world","haha":"aa","id":1}],"posts":[{"id":1,"title":"json-server","author":"typicode"},{"id":2,"title":"heihei","author":"hehe"}]};
+       var json11 = json1.qiniu;
+  	   $("#qnsc").mouseover(function(){
+           $("#qnsc").css("color","#0086B3");
+           $(this).css("background","#FFF");
+  	   });
+  	   $("#qnsc").mouseout(function(){
+           $("#qnsc").css("color","#FFF");
+           $(this).css("background","#0086B3");
+  	   });
+       
+       var x = 0;
+  	   $("#qnsc").click(function(){
+  	   	   x = x + 1;
+  	   	   $.ajax({
+		    type: 'GET',
+		    url: "http://139.196.14.215:3000/db" ,
+		    //data: data ,
+		    success: function(data) {
+              if(x<=1){//为了不让他每次点击都出现以往的记录
+                var data1 = data.qiniu;
+                $(data1).each(function(index,item){
+                $(".xsnr").append("<div style='display:inline-block;margin-left:15px;color:#0086B3;font-size:12px;width:150px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;'>"+"filename: "+item.filename+"</div>"+"<div style='display:inline-block;margin-left:15px;color:#0086B3;font-size:12px;width:110px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;'>"+"filesize: "+item.filesize+"</div>"+"<div style='display:none;'>"+item.key+"</div>"+"<div style='display:inline-block;margin-left:23px;font-size:12px;color:#0086B3;position: relative;top:-3px;' class='lj1'>复制链接</div>"+"<div style='display:inline-block;margin-left:25px;font-size:12px;color:#0086B3;position: relative;top:-3px;' class='lj0'>删除记录</div>"+"<hr color=#0086B3 size=1>");
+                });
+                $(".lj1").on('click',function(){
+                      var that = this;
+                      f3();
+                      function f3(){
+                          var clipboard = new Clipboard('.lj1', {
+                              text: function() {
+                                 return $(that).prev().html();
+                              }
+                          });
+                         clipboard.on('success', function(e) {
+                              console.log(e);
+                         });
+                         clipboard.on('error', function(e) {
+                              console.log(e);
+                         });
+                      }
+                      function generate(type, layout) {
+                         var n = noty({
+                             text        : '复制成功',
+                             type        : type,
+                             dismissQueue: true,
+                             layout      : layout,
+                             theme       : 'defaultTheme',
+                             animation: {
+							        //open: {height: 'toggle'}, // jQuery animate function property object
+							        open: {height: 'toggle'},
+							        close: {height: 'toggle'}, // jQuery animate function property object,
+							        easing: 'swing', // easing
+							        speed: 500 
+							    }                             
+                         });
+                         console.log('html: ' + n.options.id);
+                     }
+
+                     function generateAll() {
+                         generate('alert', 'topCenter');                       
+                    }
+                    generateAll();
+		            $('ul.i-am-new').css("top","100px");     
+                });//复制链接结束
+                $(".lj0").on('click',function(){
+                	var that = this;
+                	var text1 = $(that).prev().prev().html();
+                    function generate(type, layout) {
+                         var n = noty({
+                             text        : '确认删除',
+                             type        : type,
+                             dismissQueue: true,
+                             layout      : layout,
+                             theme       : 'defaultTheme',
+                             buttons     : [
+                                {addClass: 'btn btn-primary', text: '确认', onClick: function ($noty) {//这是点击ok按钮才有的事件
+                                    $noty.close();
+                                    $.ajax({
+		                                type: 'POST',
+		                                url: "http://139.196.14.215:3000/qiniu",
+		                                data: {key:text1},
+		                                success: function(data) {
+                                           $(that).prev().prev().prev().prev().remove();
+                                           $(that).prev().prev().prev().remove();
+                                           $(that).prev().prev().remove();
+                                           $(that).prev().remove();
+                                           $(that).next().remove();
+                                           $(that).remove();
+		                                }
+		                            });                                 
+                                }
+                                },
+                                {addClass: 'btn btn-danger', text: '取消', onClick: function ($noty) {
+                                    $noty.close();
+                                }
+                                }
+                            ]
+                         });
+                         console.log('html: ' + n.options.id);
+                     }
+
+                     function generateAll() {
+                         generate('alert', 'topCenter');
+                    }
+                    generateAll();
+		            $('ul.i-am-new').css("top","100px");
+                });//删除记录结束
+  	          }
+		    }
+		  });
+
+  	   });  
+  	   	   
+
+  
+  </script>
+</body>
+</html>
