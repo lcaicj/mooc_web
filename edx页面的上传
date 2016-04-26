@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>12</title>
+	<style>
+	    body{
+	    	margin: 0;
+	    	padding:0;
+	    	border:0;
+	    }
+	    a{
+	    	text-decoration: none;
+	    }
+	    .wrapp-header{
+	    	background-color: #85b000;
+	    	height: 86px;
+	    }
+	    .wrapp-header .branding{
+	    	margin: 0;
+	    	padding:20px 0;
+	    }
+        .branding a img{
+        	max-height:40px;
+        	display:block;
+        	margin-left: 2%;
+        }
+
+	</style>
+</head>
+<body>
+    <div class="wrapp-header">
+    	<h1 class="branding"><a href="/">
+        <img src="http://7kttuq.com1.z0.glb.clouddn.com/lms-logo.gif" alt="口袋大学">
+      </a></h1>
+    </div>
+    <h1><a href="#ex1" id="qnsc" rel="modal:open" style="color: rgb(255, 255, 255); padding: 10px; border: 1px solid #85b200; border-radius: 9px; position: relative; top: 10px; background: #85b200;left: 10px;font-size: 23px;">视频上传</a></h1>
+    <h2><a href="/course/course-v1:arbutus+A01+2015_T1" style="color: rgb(255, 255, 255); padding: 10px; border: 1px solid #85b200; border-radius: 9px; position: relative; top: -42px; background: #85b200;left: 145px;font-size: 23px;">&lt;&lt;返回课程</a></h2>
+</body>
+</html>
